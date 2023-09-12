@@ -1,4 +1,5 @@
 import './globals.css'
+import Link from "next/link";
 
 export const metadata = {
   title: 'Web tutorials',
@@ -9,10 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <h2><a href="/">WEB</a></h2>
+        <h1><Link href="/">WEB</Link></h1>
         <ol>
-          <li><a href="/read/1">html</a></li>
-          <li><a href="/read/2">css</a></li>
+          <li><Link href="/read/1">html</Link></li>
+          <li><Link href="/read/2">css</Link></li>
         </ol>
         {children}
         <ul>
