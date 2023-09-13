@@ -1,5 +1,7 @@
 export default function Create() {
     return (
-        <> Create!! </>
+        <> Create!!
+            <img src="/짱구.jpg"></img>
+        </>
     );
 }
