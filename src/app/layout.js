@@ -8,7 +8,7 @@ export const metadata = {
 
 // 서버 컴포넌트 방식
 export default async function RootLayout({ children }) {
-  const resp = await fetch('http://localhost:9999/topics');
+  const resp = await fetch('http://localhost:9999/topics', { cache: 'no-store' });
   const topics = await resp.json();
 
   return (
